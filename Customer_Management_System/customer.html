@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./customer.css">
+</head>
+
+<body>
+    <table class="table1">
+        <tr class="trhead">
+            <th colspan="4">
+                CUSTOMER MANAGEMENT SYSTEM
+            </th>
+        </tr>
+        <tr class="trbody">
+            <td colspan="2" class="td1">
+                <label for="txtId">Enter Numeric ID<span>*</span></label>
+            </td>
+            <td colspan="2" class="td1">
+                <input type="text" id="txtId">
+            </td>
+        </tr>
+        <tr class="trbody" id="trName">
+            <td colspan="2" class="td1">
+                <label for="txtName">Enter your Name<span>*</span></label>
+            </td>
+            <td colspan="2" class="td1">
+                <input type="text" id="txtName">
+            </td>
+        </tr>
+        <tr class="trbody" id="trAddress">
+            <td colspan="2" class="td1">
+                <label for="txtAddress">Enter your Address<span>*</span></label>
+            </td>
+            <td colspan="2" class="td1">
+                <input type="text" id="txtAddress"z>
+            </td>
+        </tr>
+        <tr class="trbody" id="trMobile">
+            <td colspan="2" class="td1">
+                <label for="txtMobile">Enter your Mobile No<span>*</span></label>
+            </td>
+            <td colspan="2" class="td1">
+                <input type="text" id="txtMobile">
+            </td>
+        </tr>
+
+
+        <tr class="trbody" id="trProfile">
+            <td colspan="2" class="td1">
+                <label for="fileProfile">Choose your profile picture</label>
+            </td>
+            <td colspan="2" class="td1">
+                <input type="file" id="fileProfile">
+            </td>
+        </tr>
+
+
+        <tr hidden id="trFindBtn" class="trbutton">
+            <td colspan="2">
+                <button style="width: 180px;" onclick="btn_ShowButton()">Show Buttons</button>
+            </td>
+            <td colspan="2" style="text-align: center;">
+                <button style="width: 180px;" onclick="btn_FindCustomer()">Find Customer</button>
+            </td>
+        </tr>
+        <tr hidden id="trDeleteBtn" class="trbutton">
+            <td colspan="2">
+                <button style="width: 180px;" onclick="btn_ShowButton()">Show Buttons</button>
+            </td>
+            <td colspan="2" style="text-align: center;">
+                <button style="width: 180px;" onclick="btn_DeleteCustomer()">Delete Customer</button>
+            </td>
+        </tr>
+        <tr hidden id="trExsistBtn" class="trbutton">
+            <td colspan="2">
+                <button style="width: 180px;" onclick="btn_ShowButton()">Show Buttons</button>
+            </td>
+            <td colspan="2" style="text-align: center;">
+                <button style="width: 180px;" onclick="btn_ExsistCustomer()">Exsist</button>
+            </td>
+        </tr>
+        <tr hidden id="trUpdateBtn" class="trbutton">
+            <td colspan="2">
+                <button style="width: 180px;" onclick="btn_ShowButton()">Show Buttons</button>
+            </td>
+            <td colspan="2" style="text-align: center;">
+                <button style="width: 180px;" onclick="btn_UpdateCustomer()">Update Customer</button>
+            </td>
+        </tr>
+        <tr class="trbutton" id="showBtn">
+            <td>
+                <button onclick="btn_AddClick()">Add</button>
+            </td>
+            <td style="text-align: center;">
+                <button onclick="btn_SearchClick()">Search</button>
+            </td>
+            <td style="text-align: center;">
+                <button onclick="btn_DeleteClick()">Delete</button>
+            </td>
+            <td style="text-align: center;">
+                <button onclick="btn_UpdateClick()">Update</button>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <table class="table2" id="tableCustomer">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile No.</th>
+            <th>Profile</th>
+        </tr>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+    <script src="./customer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+.table1 {
+    border: 3px solid black;
+    margin: auto;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.table1 tr .td1 {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.table1 tr th {
+    border: 2px solid black;
+    font-size: x-large;
+    padding: 15px;
+}
+
+.table1 tr td label {
+    padding: 0px 30px 0px 5px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.table1 tr td input {
+    width: 245px;
+    font-size: larger;
+}
+
+.table1 tr td button {
+    padding: 5px;
+    width: 80px;
+    font-size: larger;
+    margin: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+
+.table1 tr td button:hover {
+    background-color: #d3d4d5;
+}
+
+.table1 .trhead {
+    background-color: yellow;
+}
+
+.table1 .trbody {
+    background-color: aqua;
+}
+
+.table1 .trbutton {
+    background-color: rgb(80, 78, 78);
+}
+
+.table1 .trbutton td {
+    text-align: center;
+    padding: 8px 0px;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+}
+
+.table2 {
+    margin:auto;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    }
+
+.table2 tr {
+    font-size: larger;
+}
+
+.table2 tr th {
+    border: 2px solid black;
+    padding: 15px 100px;
+    background-color: #4CAF50;
+}
+
+.table2 tr td {
+    border: 2px solid black;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.table2 tr td button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    font-size: medium;
+    color: white;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+
+.table2 tr td button:hover {
+    background-color: #bb2d3b;
+}
